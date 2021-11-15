@@ -1,0 +1,15 @@
+Group 2 Assignment 7 Progress Report:
+
+We’ve decided to make a hockey game with a relatively small goal with the object being to get a puck into the goal as a goalie oscillates back and forth and attempts to block it.
+
+The four methods of user input controls the player’s character. Up and down arrow keys control the player’s position in the Y-direction, right mouse click captures the ball (as a player with a hockey stick would), and the left mouse click fires the ball with the same Y-momentum but opposite X-momentum.
+
+Upon hitting the screen limit behind the goalie, or hitting the goalie themselves, the ball bounces back at the player. Upon getting the ball into the goal past the goalie the ball disappears, the player gets a point, and the ball resets. If the ball is traveling towards the player but the player misses the puck and it reaches the opposite side of the screen behind the player, the ball resets, and the computer (goalie) gets a point.
+
+First to 5 points wins.
+
+Vincent will be doing the physics of the puck as it interacts with the player, goalie, and screen edges.
+
+Angela will be doing the GUI displaying the score and the motion of the goalie.
+
+Dayton will be doing the player character, including the player inputs to interact with the game.
