@@ -1,4 +1,6 @@
 Goalie g1;
+int goalie = 0;
+int player = 0; 
 
 void setup(){
   size(750,750);
@@ -31,4 +33,20 @@ void draw(){
   line(75, 280, 75, 475);
   line(50, 300, 50, 475);
   line(25, 375, 25, 475);
+  
+  //GUI interface
+  textSize(32);
+  text("Goalie: " + goalie, width * (3/4), 30);
+  text("Player: " + player, width * (3/4), 60);
+  
+  if(ball.x < 0 || ball.x > 750){
+    ball.x = 250; //abritrary new x value for the ball to respawn
+    ball.y = 300; //arbitrary new y value for the ball to respawn 
+    goalie += 1;
+  }
+  if(ball.y > 275 && ball.y < 475 && ball.x > 0 && ball.x < 100){
+    ball.x = 250; //abritrary new x value for the ball to respawn
+    ball.y = 300; //arbitrary new y value for the ball to respawn 
+    player += 1; 
+  }
 }
